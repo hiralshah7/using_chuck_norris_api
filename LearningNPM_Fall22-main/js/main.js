@@ -37,7 +37,10 @@ import { getData } from "./modules/dataMiner.js";
     }
 
         function buildJoke(joke) {
-            debugger;
+            let jokeText = document.querySelector('.query-result');
+
+            jokeText.textContent = joke.value;
+            // debugger;
         }
     getData('./data.json',buildTeam);
     getData('https://api.chucknorris.io/jokes/random', buildJoke)
