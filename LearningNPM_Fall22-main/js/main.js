@@ -36,5 +36,9 @@ import { getData } from "./modules/dataMiner.js";
         }) 
     }
 
-    getData(buildTeam);
+        function buildJoke(joke) {
+            debugger;
+        }
+    getData('./data.json',buildTeam);
+    getData('https://api.chucknorris.io/jokes/random', buildJoke)
 })();
