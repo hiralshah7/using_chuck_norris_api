@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Learning NPM and SASS</title>
+</head>
+<body>
+    <h1 class="hidden"> This is a team page</h1>
+
+    <section id="team-section"></section>
+
+    <!-- template tags should go at the bottom of the HTML markup -->
+    <!-- template tags don't get entered, but their content does -->
+
+    <template id="bio-template">
+        <section class="bio_panel">
+            <div class="avatar">
+                <!-- src gets added dynamically -->
+                <img src="" alt="prof image">
+            </div>
+            <!-- slug is just placeholder - this will get replaced -->
+            <h2 class="p_name">slug</h2>
+            <h3 class="p_role">slug</h3>
+            <p class="p_nickname">slug</p>
+        </section>
+    </template>
+
+    <footer>
+        <nav class="subnav">
+            <ul>
+                
+            </ul>
+        </nav>
+    </footer>
+
+<!-- your JS always goes here -->
+<!-- make the JS file wait to be parsed with the defer attribute (last thing the DOM engine reads)-->
+<!-- the type attribute tels the JS engine that we're using modules (standalone JS files)-->
+    <!-- <script src="js/modules/data.js"></script> -->
+    <script src="js/main.js" type="module" defer></script>
+
+</body>
+</html>
